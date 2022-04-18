@@ -36,7 +36,7 @@ callback_whitelist = profile_tasks
 [callback_profile_tasks ]
 task_output_limit = 100
 EOF
-clear
 sudo su -c "echo $node0 node0 >> /etc/hosts"
 sudo su -c "echo $node1 node1 >> /etc/hosts"
 sudo su -c "echo $node2 node2 >> /etc/hosts"
+clear
