@@ -1,0 +1,33 @@
+{
+  "title": "Base scenario",
+  "description": "Base scenario for practice training",
+  "difficulty": "beginner",
+  "time": "5-10 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "code": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+              "host01": [
+                  {"file": "project/*", "target": "/tmp"}
+              ]
+          }
+  },
+  "environment": {
+    "hideintro": false,
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu:2004"
+  }
+}
