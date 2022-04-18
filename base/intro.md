@@ -1,3 +1,3 @@
 Base template Introduction
 
-![Lab setup](https://lucid.app/publicSegments/view/a888d5fb-4ad8-4db5-87c5-8d7370e0aff7/image.jpeg)
+![Lab setup](https://lucid.app/publicSegments/view/23be8512-9748-4ce3-bc85-24c9910d90d7/image.jpeg)
