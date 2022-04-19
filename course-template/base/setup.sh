@@ -2,7 +2,7 @@
 
 sudo apt update
 sudo add-apt-repository --yes --update ppa:ansible/ansible
-sudo apt install -qq -y ansible || true
+sudo apt install -y ansible || true
 docker network create lan
 image=ghcr.io/goffinet/nodelab:master
 docker pull $image
