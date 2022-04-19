@@ -1,0 +1,11 @@
+{
+  "title": "Template",
+  "description": "Base template for Katacoda courses",
+  "courses": [
+      {
+          "course_id": "base",
+          "title": "Base scenario",
+          "description": "Description for Base scenario"
+      }
+  ]
+}
