@@ -19,7 +19,7 @@
     },
     "assets": {
               "host01": [
-                  {"file": "project/*", "target": "/tmp"}
+                  {"file": "scripts/ansible_ubuntu_installation.sh", "target": "/root"}
               ]
           }
   },
