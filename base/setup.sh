@@ -1,10 +1,13 @@
 #!/bin/bash
 
-sudo apt update
-sudo add-apt-repository --yes --update ppa:ansible/ansible
+echo "++++ Update Ansible version"
+sudo apt -qq update
+sudo add-apt-repository --yes --update ppa:ansible/ansible &>/dev/null
+sudo DEBIAN_FRONTEND=noninteractive apt install -qq ansible
 docker network create lan
 image=ghcr.io/goffinet/nodelab:master
-docker pull $image
+echo "++++ Pull Docker image"
+docker pull $image &>/dev/null
 mkdir /share
 ssh-keygen -b 4096 -t rsa -f /root/.ssh/id_rsa_ansible -q -N ""
 cat /root/.ssh/id_rsa_ansible.pub > /share/authorized_keys
