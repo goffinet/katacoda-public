@@ -1,8 +1,5 @@
 #!/bin/bash
 
-sudo apt update
-sudo add-apt-repository --yes --update ppa:ansible/ansible
-sudo apt install -y ansible || true
 docker network create lan
 image=ghcr.io/goffinet/nodelab:master
 docker pull $image
@@ -40,4 +37,7 @@ EOF
 sudo su -c "echo $node0 node0 >> /etc/hosts"
 sudo su -c "echo $node1 node1 >> /etc/hosts"
 sudo su -c "echo $node2 node2 >> /etc/hosts"
+sudo apt update
+sudo add-apt-repository --yes --update ppa:ansible/ansible
+sudo apt install -y ansible || clear
 clear
