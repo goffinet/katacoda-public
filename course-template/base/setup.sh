@@ -1,5 +1,9 @@
 #!/bin/bash
 
+apt update
+add-apt-repository --yes --update ppa:ansible/ansible
+apt install -y ansible
+
 image=ghcr.io/goffinet/nodelab:master
 share=/share
 network=lan
