@@ -12,7 +12,8 @@
     ],
     "intro": {
       "text": "intro.md",
-      "code": "setup.sh"
+      "foreground": "setup.sh",
+      "background": "ansible_ubuntu_installation.sh"
     },
     "finish": {
       "text": "finish.md"
