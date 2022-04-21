@@ -38,4 +38,4 @@ callback_whitelist = profile_tasks
 [callback_profile_tasks ]
 task_output_limit = 100
 EOF
-clear
+#clear
